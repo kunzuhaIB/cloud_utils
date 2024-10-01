@@ -10,6 +10,7 @@ def upload_to_bucket(source_path: str, destination_bucket: str, destination_blob
         directory_path = Path to local directory to upload
         dest_bucket_name = Bucket name in AWS
         dest_blob_name = Directory name in AWS
+        
     """
     try:
         client.upload_file(source_path, destination_bucket, destination_blob)
